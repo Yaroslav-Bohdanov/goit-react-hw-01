@@ -27,7 +27,7 @@
 }
 
 .tr {
-  &:nth-of-type(odd) {
-    background-color: rgb(142, 142, 142);
+  &:nth-child(even) {
+    background-color: rgb(236, 210, 210);
   }
 }
