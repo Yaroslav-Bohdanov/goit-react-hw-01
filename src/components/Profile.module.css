@@ -1,54 +1,92 @@
 .box {
-  width: 450px;
-  height: 450px;
-  border: 3px solid var(--black);
-  border-radius: 10px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.profImg {
-  width: 150px;
-  height: 150px;
-  background-color: var(--dark-gray);
-  border-radius: 50%;
-  margin-top: 20px;
-}
-
-.tag {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  color: var(--steel-gray);
-}
-.name {
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--black);
-}
-
-.list {
-  display: flex;
-  width: 100%;
-  background-color: var(--gray);
-}
-
-.item {
-  width: 300px;
-  height: 100px;
-  border: 1.5px solid var(--black);
-  border-bottom: 0;
-  border-left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  color: var(--black);
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 2px 2px 5px 1px gray;
+  background-color: white;
+  overflow: hidden;
+  transition: transform 500ms linear;
 }
-.spam {
-  font-weight: 600;
+.tag {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #686565;
+  margin-bottom: 20px;
+}
+
+.profImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  color: #0e0d0d;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.tag p {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #686565;
+  margin: 10px 0;
+}
+
+.list {
+  margin: 0;
+  width: 500px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12px;
+  border-top: 2px solid #6a6b69;
+  background-color: rgb(199, 196, 196);
+  transition: width 250ms linear;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.item:not(:last-child) {
+  border-right: 2px solid #6a6b69;
+}
+
+.item span {
+  display: block;
+  font-size: 25px;
+  color: black;
+}
+
+.item span:first-child {
+  font-weight: normal;
+}
+
+.item span:last-child {
+  font-weight: bold;
+  margin-top: 5px;
 }
